@@ -18,7 +18,7 @@ def print_alph():
             if largest:
                 sorted_list.append(curr_driver)
 
-    print(sorted_list)
+    printlist(sorted_list)
 
 def print_num():
     sorted_list = []
@@ -35,13 +35,15 @@ def print_num():
                     break
             if largest:
                 sorted_list.append(curr_driver)
-            
-            
-        
-    print(sorted_list)
+
+    printlist(sorted_list)
+
+def printlist(sorted_list):
+    for driver in sorted_list:
+        print(driver)
 
 def getinput():
-    str = input("Enter 'a' to sort alphebetically, or enter n to sort numerically\n")
+    str = input("Enter 'a' to sort alphebetically, or enter 'n' to sort numerically\n")
 
     if str == "a":
         print_alph()
